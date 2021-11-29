@@ -47,7 +47,11 @@ public class PhoneNumber {
 
     @Override
     public String toString() {
-        return String.format("+%s (%s) %s-%s", countryCode, cityCode, number.substring(0, 3), number.substring(3));
+        String formattedPhone = "";
+        if(this.number.length()>0){
+            formattedPhone  = String.format("+%s (%s) %s-%s", countryCode, cityCode, number.substring(0, 3), number.substring(3));
+        }
+        return formattedPhone;
     }
 
     @Override
