@@ -22,12 +22,9 @@ public class TestDirectoryReader {
     public TestDirectoryReader() {
     }
 
-    /**
-     * Test of toString method, of class PhoneNumber.
-     */
     @Test
     public void testListFilesInDirectory() {
-        System.out.println("toString");
+        System.out.println("listFilesInDirectory");
         File directory = new File(directoryPath);
         List<File> txtFiles = DirectoryReader.listFilesInDirectory(directory);
         boolean expResult = true;
