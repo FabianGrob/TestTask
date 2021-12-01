@@ -22,6 +22,10 @@ public class DirectoryProcessorService {
         this.processedNumbers = new ArrayList();
     }
 
+    public List<String> getProcessedNumbers() {
+        return this.processedNumbers;
+    }
+
     public static DirectoryProcessorService getDirectoryProcessorService() {
         if (singleton == null) {
             singleton = new DirectoryProcessorService();

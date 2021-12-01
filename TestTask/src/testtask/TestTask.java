@@ -31,13 +31,7 @@ public class TestTask {
         if (args.length == 2) {
             String command = args[0];
             if (command.equals("processFiles")) {
-                String directory = args[1];
-                System.out.println(directory);
-                DirectoryProcessorService service = DirectoryProcessorService.getDirectoryProcessorService();
-                List<String> numbers = service.processDirectoryFiles(directory);
-                for (final String number : numbers) {
-                    System.out.println(number);
-                }
+                excecuteCommand(command, args[1]);
             } else {
                 System.out.println("Invalid command");
             }
@@ -46,6 +40,15 @@ public class TestTask {
         }
         printSuggestions();
 
+    }
+
+    public static void excecuteCommand(String command, String directory) {
+        System.out.println(directory);
+        DirectoryProcessorService service = DirectoryProcessorService.getDirectoryProcessorService();
+        List<String> numbers = service.processDirectoryFiles(directory);
+        for (final String number : numbers) {
+            System.out.println(number);
+        }
     }
 
 }
