@@ -20,7 +20,7 @@ public class TestTask {
         System.out.println("Hello! this are the available functionalities:\n");
 
         System.out.println("Process txt files:\n");
-        System.out.println("The system will process files inside the given directory (including nested directories) and print its content:\n +A (AAA) AAA-AAAA \n");
+        System.out.println("The system will process files inside the given directory (including nested directories)\nWhich are suposed to contain phone numbers, and print each valid number with the folowing format:\n +A (AAA) AAA-AAAA \n");
         System.out.println("To run it you should excecute the following command:");
         System.out.println("testTask processFiles <directory_path>");
 
