@@ -17,7 +17,7 @@ import org.junit.Test;
  */
 public class TestDirectoryReader {
 
-    private static String directoryPath = System.getProperty("user.dir") + "/testFiles";
+    private static final String directoryPath = System.getProperty("user.dir") + "/testFiles";
 
     public TestDirectoryReader() {
     }
