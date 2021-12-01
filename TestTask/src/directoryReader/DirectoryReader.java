@@ -18,7 +18,7 @@ public class DirectoryReader {
             if (fileEntry.isDirectory()) {
                 files.addAll(listFilesInDirectory(fileEntry));
             } else {
-                if (fileEntry.getName().contains(fileExtension)) {
+                if (fileEntry.getName().endsWith(fileExtension)) {
                     files.add(fileEntry);
                 }
             }
